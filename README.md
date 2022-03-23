@@ -16,4 +16,20 @@ Goal / Aim: Identify behavioural
 #Visual aids: materials like screenshots to show examples of running project and structure and design principles of project
 
 #Data Sets
+survivaldata
+  Datasheets: 
+    FM_Ophio11
+    FM_Ophio12
+    FM_Ophio13
+    FM_Cordy11
+    FM_Cordy12
+    FM_Cordy13
+    cordy_all
+    ophio_all
+  -day: experimental day of death
+  -date: date of death
+  -time: time of death
+  -treatment: 'c' is control, 'i' is infected
+  -death: '1' for death, '0' survived by the end of experiment
+  -treatment_rep: control11 means control ant from colony 11
 
