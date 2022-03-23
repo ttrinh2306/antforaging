@@ -1,7 +1,4 @@
-###Set working directory----
-#setwd("~/OneDrive - Knights - University of Central Florida/Maze experiments/FINALMAZEDATASHEETS/R_code/github")
-
-##Load packages----
+#Load packages----
 library(MASS)
 library(reshape2)
 library(reshape)
@@ -25,12 +22,12 @@ library(gridExtra)
 library(readxl)
 
 #Load data from each experimental group-----
-ophio11_survival<- read_excel("./survival_data.xlsx", sheet = "FM_Ophio11") 
-ophio12_survival<- read_excel("./survival_data.xlsx", sheet = "FM_Ophio12") 
-ophio13_survival<- read_excel("./survival_data.xlsx", sheet = "FM_Ophio13") 
-cordy11_survival<- read_excel("./survival_data.xlsx", sheet = "FM_Cordy11") 
-cordy12_survival<- read_excel("./survival_data.xlsx", sheet = "FM_Cordy12") 
-cordy13_survival<- read_excel("./survival_data.xlsx", sheet = "FM_Cordy13")
+ophio11_survival<- read_excel("./data/survival_data.xlsx", sheet = "FM_Ophio11") 
+ophio12_survival<- read_excel("./data/survival_data.xlsx", sheet = "FM_Ophio12") 
+ophio13_survival<- read_excel("./data/survival_data.xlsx", sheet = "FM_Ophio13") 
+cordy11_survival<- read_excel("./data/survival_data.xlsx", sheet = "FM_Cordy11") 
+cordy12_survival<- read_excel("./data/survival_data.xlsx", sheet = "FM_Cordy12") 
+cordy13_survival<- read_excel("./data/survival_data.xlsx", sheet = "FM_Cordy13")
 
 #Combine data from OI colonies separately and BI colonies separately
 ophioall_survival<-rbind(ophio11_survival, ophio12_survival, ophio13_survival)
